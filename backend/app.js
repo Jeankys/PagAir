@@ -56,6 +56,10 @@ app.delete('/api/vuelos/:id', async (req, res) => {
     }
 });
 
+app.get('/', function(req, res){
+	res.status(200).send('Hola Chicos!');
+});
+
 // Iniciar el servidor en el puerto 3001
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
